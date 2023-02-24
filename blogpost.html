@@ -1,56 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-    crossorigin="anonymous"
-  />
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"
-  ></script>
-  <style></style>
-</head>
-<body>
-<!-- navbar here -->
-<div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <style></style>
+  </head>
+  <body>
+    <!-- crousal post starts here -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="https://source.unsplash.com/1600x500/?nature,water" class="d-block w-100" alt="..." />
+          <img
+            src="https://source.unsplash.com/1600x500/?nature,water"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
         <div class="carousel-item">
-            <img src="https://source.unsplash.com/1600x500/?nature,water" class="d-block w-100" alt="..." />
+          <img
+            src="https://source.unsplash.com/1600x500/?nature,water"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
         <div class="carousel-item">
-            <img src="https://source.unsplash.com/1600x500/?nature,water" class="d-block w-100" alt="..." />
+          <img
+            src="https://source.unsplash.com/1600x500/?nature,water"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      </button>
     </div>
-  </div>
 
-    
+    <!-- cards for Categories -->
+    <div class="container">
+      <h2 class="text-center my-3">Categories Tab</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card my-2" style="width: 18rem">
+            <img
+              src="https://source.unsplash.com/1600x900/?honey,bee"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Hi! This is me man DON here.</p>
+              <a href="#" class="btn btn-primary">Explore..</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
+
+<!-- <?php
+    $sql = "SELECT * FROM `category`";
+    $result = mysqli_query($conn, $sql);
+    while ($row = mysqli_fetch_assoc($result)) {
+        $cat = $row['category_name'];
+        $catd = $row['category_des'];
+        echo '<div class="col-md-4">
+        <div class="card my-2" style="width: 18rem">
+            <img
+            src="https://source.unsplash.com/1600x900/?island,water"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">' . $cat .
+        '</h5>
+          <p class="card-text">Hi! This is me man.
+          </p>
+          <a href="#" class="btn btn-primary">Explore..</a>
+        </div>
+      </div>
+    </div>
+
+';
+    }
+    ?> -->
