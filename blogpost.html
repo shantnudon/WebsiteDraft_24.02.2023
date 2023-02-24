@@ -68,8 +68,8 @@
     <div class="container">
       <h2 class="text-center my-3">Categories Tab</h2>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card my-2" style="width: 18rem">
+        <div class="col-md-3">
+          <div class="card my-2 mx-auto" style="width: 18rem">
             <img
               src="https://source.unsplash.com/1600x900/?honey,bee"
               class="card-img-top"
@@ -82,7 +82,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 mx-auto">
           <div class="card my-2" style="width: 18rem">
             <img
               src="https://source.unsplash.com/1600x900/?coding,java"
@@ -96,7 +96,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="card my-2" style="width: 18rem">
             <img
               src="https://source.unsplash.com/1600x900/?coding,php"
@@ -110,10 +110,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="card my-2" style="width: 18rem">
             <img
-              src="https://source.unsplash.com/1600x900/?coding,laptop"
+              src="https://source.unsplash.com/1600x900/?coding,mind"
               class="card-img-top"
               alt="..."
             />
@@ -124,6 +124,37 @@
             </div>
           </div>
         </div>
+        <div class="col-md-3">
+          <div class="card my-2" style="width: 18rem">
+            <img
+              src="https://source.unsplash.com/1600x900/?beauty,animal"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Hi! This is me man DON here.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card my-2" style="width: 18rem">
+            <img
+              src="https://source.unsplash.com/1600x900/?wifi,game"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Hi! This is me man DON here.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+
+
     </div>
 </div>
 </body>
@@ -135,7 +166,7 @@
     while ($row = mysqli_fetch_assoc($result)) {
         $cat = $row['category_name'];
         $catd = $row['category_des'];
-        echo '<div class="col-md-4">
+        echo '<div class="col-md-3">
         <div class="card my-2" style="width: 18rem">
             <img
             src="https://source.unsplash.com/1600x900/?island,water"
