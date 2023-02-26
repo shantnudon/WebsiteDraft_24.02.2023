@@ -5,3 +5,8 @@
 <p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
+
+
+<?php
+echo "This is a php line.";
+?>
