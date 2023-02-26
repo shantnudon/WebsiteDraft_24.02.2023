@@ -1,3 +1,7 @@
+<?php
+echo "This is a php line";
+?>
+
 <!DOCTYPE html>
 <html>
 <body>
@@ -7,6 +11,4 @@
 </html>
 
 
-<?php
-echo "This is a php line.";
-?>
+
